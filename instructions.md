@@ -1,0 +1,16 @@
+The following requirements must be met for this lab to be considered successful:
+
+The layout and styling of the site is left up to your discretion. There are no layout or styling requirements, but you should always make sure your web applications are neat, sensible, and provide a good user experience.
+Use the provided array of "learner" data below to initialize state as an object with a learners key in the <App> component.
+Code the <App> component to display a <Learner> component for each learner object in the learners array being held in state.
+Code the <Learner> component so that it:
+
+Renders the learners's name & bio properties.
+Renders a <Score> component for each score object in the learner's scores property.
+Code the <Score> component so that it renders the score object's date & score properties.
+
+
+Hint
+You will not update state in this lab. You are only initializing it in App.js, passing it as props, and rendering it's data in the components.
+
+Here's what it should look like when you call useState inside of App.js:
