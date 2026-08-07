@@ -2,7 +2,9 @@ import {  useState } from 'react'
 import Learner from './assets/Learner.jsx'
 
 
-[
+function App() {
+  const [learnerData] = useState({
+    learners: [
   {
     name: 'Cait Yomorta',
     bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus placeat nostrum explicabo? Voluptatibus expedita saepe officia optio, commodi totam ratione laudantium ipsum porro molestias, quasi nulla minus vitae laboriosam corrupti Delectus inventore explicabo est odit incidunt rem a recusandae eum pariatur. Aperiam doloremque blanditiis harum voluptate animi fugit beatae asperiores quo, dignissimos sed illum veniam eum accusantium nulla quod voluptatum',
@@ -61,5 +63,17 @@ import Learner from './assets/Learner.jsx'
       }
     ]
   }
-]
+    ]
+  })
+  
+  return (
+    <div>
+      {learnerData.learners.map((learner, index) => (
+        <Learner key={index} learner={learner} />
+      ))}
+    </div>
+  )
+}
 
+
+export default App
